@@ -15,7 +15,7 @@ use super::render::Renderer;
 macro_rules! error {
     ($cx:expr, $sp:expr, $msg:expr) => ({
         $cx.span_err($sp, $msg);
-        return Err(::syntax::diagnostic::FatalError);
+        return Err(::syntax::errors::FatalError);
     })
 }
 macro_rules! parse_error {

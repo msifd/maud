@@ -2,7 +2,7 @@ use std::mem;
 use syntax::ast::{Expr, ExprParen, Lit, Stmt, TokenTree};
 use syntax::ext::quote::rt::ToTokens;
 use syntax::codemap::Span;
-use syntax::diagnostic::FatalError;
+use syntax::errors::FatalError;
 use syntax::ext::base::ExtCtxt;
 use syntax::parse::{self, PResult};
 use syntax::parse::parser::Parser as RustParser;
